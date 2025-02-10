@@ -1,0 +1,17 @@
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\bin\Debug\net6.0\Questao2.exe
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\bin\Debug\net6.0\Questao2.deps.json
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\bin\Debug\net6.0\Questao2.runtimeconfig.json
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\bin\Debug\net6.0\Questao2.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\bin\Debug\net6.0\Questao2.pdb
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.csproj.AssemblyReference.cache
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfoInputs.cache
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.AssemblyInfo.cs
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.csproj.CoreCompileInputs.cache
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.csproj.Up2Date
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\refint\Questao2.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.pdb
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\Questao2.genruntimeconfig.cache
+C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao2\obj\Debug\net6.0\ref\Questao2.dll
