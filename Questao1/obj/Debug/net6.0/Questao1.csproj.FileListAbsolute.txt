@@ -12,3 +12,17 @@ C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao1\
 C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao1\obj\Debug\net6.0\Questao1.pdb
 C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao1\obj\Debug\net6.0\Questao1.genruntimeconfig.cache
 C:\Users\Premiersoft\Documents\ARQ\Alberto\Teste\OneDrive_1_04-02-2025\Questao1\obj\Debug\net6.0\ref\Questao1.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\bin\Debug\net6.0\Questao1.exe
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\bin\Debug\net6.0\Questao1.deps.json
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\bin\Debug\net6.0\Questao1.runtimeconfig.json
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\bin\Debug\net6.0\Questao1.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\bin\Debug\net6.0\Questao1.pdb
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\Questao1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\Questao1.AssemblyInfoInputs.cache
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\Questao1.AssemblyInfo.cs
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\Questao1.csproj.CoreCompileInputs.cache
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\Questao1.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\refint\Questao1.dll
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\Questao1.pdb
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\Questao1.genruntimeconfig.cache
+C:\Users\Premiersoft\Documents\ARQ\Alberto\TesteAlberto\Questao1\obj\Debug\net6.0\ref\Questao1.dll

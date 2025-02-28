@@ -3,13 +3,13 @@ using Questao5.Application.Handlers;
 using Questao5.Domain.Interfaces;
 using Xunit;
 
-namespace Questao5.Testes.Handlers
+namespace Questao5.Testes.ApplicationTests.HandlersTests.SaldoTests
 {
     [Collection(nameof(SaldoContaCorreteHandlerCollection))]
     public class SaldoContaCorreteHandlerTeste
     {
         readonly SaldoContaCorreteHandlerFixture _saldoContaCorreteHandlerFixture;
-        private readonly SaldoContaCorreteHandler _saldoContaCorreteHandler;
+        private readonly SaldoHandler _saldoContaCorreteHandler;
 
         public SaldoContaCorreteHandlerTeste(SaldoContaCorreteHandlerFixture saldoContaCorreteHandlerFixture)
         {

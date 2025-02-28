@@ -30,13 +30,14 @@ class Program {
 
             Console.Write("Entre com o titular da conta: ");
             string titular = Console.ReadLine();
+
             Console.Write("Haverá depósito inicial (s/n)? ");
-            char resp = char.Parse(Console.ReadLine());
-            if (resp == 's' || resp == 'S')
+            char resp = char.Parse(Console.ReadLine().Trim().ToUpper());
+            if (resp == 'S')
             {
                 Console.Write("Entre com o valor de depósito inicial: ");
-                double depositoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                conta = new ContaBancaria(numero, titular, depositoInicial);
+                double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                conta = new ContaBancaria(numero, titular, valor);
             }
             else
             {
@@ -51,6 +52,8 @@ class Program {
             Console.Write("Entre com um valor para depósito: ");
             double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             conta.Deposito(quantia);
+
+            Console.WriteLine();
             Console.WriteLine("Dados da conta atualizados:");
             Console.WriteLine(FormataConta(conta));
 
@@ -58,32 +61,43 @@ class Program {
             Console.Write("Entre com um valor para saque: ");
             quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             conta.Saque(quantia);
-            
+
+            Console.WriteLine();
             Console.WriteLine("Dados da conta atualizados:");
             Console.WriteLine(FormataConta(conta));
 
             _contas.Add(conta);
 
+            alterar:
             Console.WriteLine();
-            Console.WriteLine("Deseja alterar no nome do Titular (s/n)?: ");
-            alterarNome = Console.ReadLine();
+            Console.WriteLine("Deseja alterar o nome do Titular de alguma conta (s/n)?: ");
+            alterarNome = Console.ReadLine().Trim().ToUpper();
 
-            if (alterarNome == "s") 
+            if (alterarNome == "S") 
             {
+                Console.Write("Entre com o número da conta: ");
+                string numeroConta = Console.ReadLine();
+
+                var retorno = _contas.FirstOrDefault(x => x.Conta == int.Parse(numeroConta));
+                if (retorno == null)
+                {
+                    Console.WriteLine("Conta inválida");
+                    goto alterar;
+                }
+
                 Console.Write("Entre com o novo nome: ");
                 string novoNome = Console.ReadLine();
 
-                AlterarNomeTitular(numero, novoNome);
+                retorno.Titular = novoNome;
 
                 Console.WriteLine("Dados da conta atualizados:");
-                Console.WriteLine(FormataConta(conta));
+                Console.WriteLine(FormataConta(retorno));
             }
 
             Console.WriteLine();
-            Console.WriteLine("Digite s para sair ou enter para continuar: ");
-            sair = Console.ReadLine();
-        } while (sair?.ToLower() != "s");
-
+            Console.WriteLine("Digite S para sair ou enter para continuar: ");
+            sair = Console.ReadLine().Trim().ToUpper();
+        } while (sair?.ToUpper() != "S");
         
 
         /* Output expected:
@@ -132,15 +146,8 @@ class Program {
 
     public static string FormataConta(ContaBancaria conta) 
     {
-        var valorFormatado = conta.Saldo.ToString("C", new CultureInfo("en-US"));
+        var saldo = conta.ObterSaldo();
+        var valorFormatado = saldo.ToString("C", new CultureInfo("en-US"));
         return $"Conta {conta.Conta}, Titular: {conta.Titular}, Saldo: {valorFormatado}";
-    }
-
-    public static ContaBancaria AlterarNomeTitular(int conta, string novoNome) 
-    {
-        var retorno = _contas.FirstOrDefault(x => x.Conta == conta);
-        retorno.Titular = novoNome;
-
-        return retorno;
     }
 }

@@ -6,7 +6,7 @@ namespace Questao5.Domain.Entities
     {
         public string IdMovimento { get; set; } = string.Empty;
         public string IdContaCorrente { get; set; } = string.Empty;
-        public DateTime DataMovimento { get; set; }
+        public string DataMovimento { get; set; } = string.Empty;
         public string TipoMovimento { get; set; } = string.Empty;
         public double Valor { get; set; }
     }

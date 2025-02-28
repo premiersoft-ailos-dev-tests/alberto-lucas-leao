@@ -4,7 +4,7 @@ using Questao5.Domain.Entities;
 using Questao5.Domain.Interfaces;
 using Xunit;
 
-namespace Questao5.Testes.Handlers
+namespace Questao5.Testes.ApplicationTests.HandlersTests.MovimentacaoTests
 {
     [Collection(nameof(MovimentacaoHandlerCollection))]
     public class MovimentacaoHandlerTeste

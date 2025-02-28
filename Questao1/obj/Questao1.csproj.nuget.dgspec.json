@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao1\\Questao1.csproj": {}
+    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao1\\Questao1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao1\\Questao1.csproj": {
+    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao1\\Questao1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao1\\Questao1.csproj",
+        "projectUniqueName": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao1\\Questao1.csproj",
         "projectName": "Questao1",
-        "projectPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao1\\Questao1.csproj",
+        "projectPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao1\\Questao1.csproj",
         "packagesPath": "C:\\Users\\Premiersoft\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao1\\obj\\",
+        "outputPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Premiersoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,24 +56,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.33, 6.0.33]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

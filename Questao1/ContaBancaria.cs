@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Questao1;
 
@@ -6,27 +7,49 @@ public class ContaBancaria
 {
     public ContaBancaria() {}
 
-    public ContaBancaria(int conta, string titular,double valor = 0)    
+    public ContaBancaria(int conta, string titular, double valor = 0)    
     {
         Conta = conta;
         Titular = titular;
         Saldo = valor;
     }
 
-    [Required]
+    [Required(ErrorMessage = "O número da conta deve ser informado")]
     public int Conta { get; set; }
-    [Required]
+    [Required(ErrorMessage = "O nome do ttular deve ser informado")]
     public string Titular { get; set; }
-    public double Saldo { get; set; }
+    
+    private double Saldo;
 
-    public void Deposito(double quantia) 
-    { 
-        Saldo += quantia;
+    private const double TaxaSaque = 3.50;
+
+    public double ObterSaldo() 
+    {
+        return Saldo;
     }
 
-    public void Saque(double quantia) 
+    public bool Deposito(double valor) 
     {
-        quantia += 3.50;        
-        Saldo -= quantia;      
+        if (valor <= 0)
+        {
+            Console.WriteLine("O depósito deve ser maior que 0");
+            return false;
+        }
+
+        Saldo += valor;
+        return true;
+            
+    }
+
+    public bool Saque(double valor) 
+    {
+        if (valor <= 0) 
+        {
+            Console.WriteLine("Valor inválido para o saque");
+            return false;
+        }
+
+        Saldo -= (valor + TaxaSaque);
+        return true;
     }
 };

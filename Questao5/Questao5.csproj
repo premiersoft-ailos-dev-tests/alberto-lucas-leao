@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Bogus" Version="35.6.1" />
     <PackageReference Include="Moq.AutoMock" Version="3.4.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.24" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
 	<PackageReference Include="Dapper" Version="2.0.35" />
 	<PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.6" />
@@ -34,7 +35,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Idempotencia\" />
     <Folder Include="Application\Queries\Requests\" />
     <Folder Include="Application\Queries\Responses\" />
     <Folder Include="Domain\Language\" />
@@ -43,6 +43,7 @@
     <Folder Include="Infrastructure\Database\QueryStore\Requests\" />
     <Folder Include="Infrastructure\Database\QueryStore\Responses\" />
     <Folder Include="Infrastructure\Services\" />
+    <Folder Include="Testes\ApplicationTests\CommandsTests\ResponseTests\" />
   </ItemGroup>
 
 </Project>

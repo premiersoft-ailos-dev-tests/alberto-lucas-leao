@@ -2,6 +2,7 @@
 using Questao5.Application.Commands.Requests;
 using Questao5.Domain.Entities;
 using Questao5.Domain.Interfaces;
+using StackExchange.Redis;
 
 namespace Questao5.Application.Handlers
 {
@@ -9,6 +10,7 @@ namespace Questao5.Application.Handlers
     {
         private readonly IContaCorrenteRepository _contaCorrenteRepository;
         private readonly IMovimentacaoRepository _movimentacaoRepository;
+
 
         public MovimentacaoHandler(IContaCorrenteRepository contaCorrenteRepository,
                                    IMovimentacaoRepository movimentacaoRepository,
@@ -20,7 +22,6 @@ namespace Questao5.Application.Handlers
 
         public async Task<string> Handle(MovimentacaoRequestCommand request, CancellationToken cancellationToken)
         {
-           
             var contaCorrente = await _contaCorrenteRepository.ObterContaCorrete(request.NumeroConta, cancellationToken);
             if (contaCorrente == null || contaCorrente.Ativo == 0) 
                 throw new BadHttpRequestException("Não foi possível obter a conta correte, verifique se a conta esta ativa");            
@@ -29,12 +30,12 @@ namespace Questao5.Application.Handlers
                 new Movimentacao
                 {
                     IdContaCorrente = contaCorrente.IdContaCorrente,
-                    DataMovimento = DateTime.Now,
+                    DataMovimento = DateTime.Now.ToString(),
                     TipoMovimento = request.Tipo.ToString(),
                     Valor = Math.Round(request.Valor, 2)
                 },
                 cancellationToken
-            );            
+            );
 
             return movimentacaoContaCorrete.IdMovimento;            
         }

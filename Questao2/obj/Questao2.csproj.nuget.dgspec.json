@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao2\\Questao2.csproj": {}
+    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao2\\Questao2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao2\\Questao2.csproj": {
+    "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao2\\Questao2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao2\\Questao2.csproj",
+        "projectUniqueName": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao2\\Questao2.csproj",
         "projectName": "Questao2",
-        "projectPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao2\\Questao2.csproj",
+        "projectPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao2\\Questao2.csproj",
         "packagesPath": "C:\\Users\\Premiersoft\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao2\\obj\\",
+        "outputPath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Premiersoft\\AppData\\Roaming\\NuGet\\NuGet.Config",

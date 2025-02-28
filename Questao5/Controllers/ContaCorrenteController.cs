@@ -16,6 +16,11 @@ namespace Questao5.Controllers
             _mediator = mediator ?? throw new ArgumentException(nameof(IMediator));
         }
 
+        /// <summary>
+        /// Registra nova movimentação da conta corrente
+        /// </summary>
+        /// <param name="input">Contém os dados da movimentação</param>
+        /// <returns>Retorna a identificação da movimentãção</returns>
         [HttpPost("movimentacao")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -40,6 +45,11 @@ namespace Questao5.Controllers
             
         }
 
+        /// <summary>
+        /// Obtém o daldo da conta corrente
+        /// </summary>
+        /// <param name="numeroContaCorrete">Contém o identificador da conta</param>
+        /// <returns>Retorna o saldo e os dados da conta</returns>
         [HttpGet("saldo")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

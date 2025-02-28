@@ -1,4 +1,4 @@
-﻿namespace Questao5.Infrastructure.Middleware.Querys
+﻿namespace Questao5.Infrastructure.Middleware.IdempotenciaMiddleware.Querys
 {
     public class IdempotenciaQuery
     {

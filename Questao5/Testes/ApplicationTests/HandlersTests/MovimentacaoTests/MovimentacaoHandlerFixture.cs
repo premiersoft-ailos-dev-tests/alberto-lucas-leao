@@ -6,7 +6,7 @@ using Questao5.Domain.Entities;
 using Questao5.Domain.Enumerators;
 using Xunit;
 
-namespace Questao5.Testes.Handlers
+namespace Questao5.Testes.ApplicationTests.HandlersTests.MovimentacaoTests
 {
     [CollectionDefinition(nameof(MovimentacaoHandlerCollection))]
     public class MovimentacaoHandlerCollection : ICollectionFixture<MovimentacaoHandlerFixture> { }
@@ -30,7 +30,7 @@ namespace Questao5.Testes.Handlers
             return new Faker<Movimentacao>(_localizacao)
                 .RuleFor(x => x.IdMovimento, f => f.Random.Number(1, 37).ToString())
                 .RuleFor(x => x.IdContaCorrente, f => f.Random.Number(1, 37).ToString())
-                .RuleFor(x => x.DataMovimento, f => f.Date.Past())
+                .RuleFor(x => x.DataMovimento, f => f.Date.Past().ToString())
                 .RuleFor(x => x.TipoMovimento, f => "C")
                 .RuleFor(x => x.Valor, f => f.Random.Number(1, 100));
         }
@@ -44,8 +44,8 @@ namespace Questao5.Testes.Handlers
                 .RuleFor(x => x.Tipo, f => TipoMovimentacao.C);
         }
 
-        public MovimentacaoHandler ObterMovimentacaoHandler() 
-        { 
+        public MovimentacaoHandler ObterMovimentacaoHandler()
+        {
             Mocker = new AutoMocker();
             MovimentacaoHandler = Mocker.CreateInstance<MovimentacaoHandler>();
 

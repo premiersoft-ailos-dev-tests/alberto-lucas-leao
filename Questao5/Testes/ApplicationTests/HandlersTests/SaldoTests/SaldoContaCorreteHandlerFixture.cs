@@ -5,14 +5,14 @@ using Questao5.Application.Handlers;
 using Questao5.Domain.Entities;
 using Xunit;
 
-namespace Questao5.Testes.Handlers
+namespace Questao5.Testes.ApplicationTests.HandlersTests.SaldoTests
 {
     [CollectionDefinition(nameof(SaldoContaCorreteHandlerCollection))]
     public class SaldoContaCorreteHandlerCollection : ICollectionFixture<SaldoContaCorreteHandlerFixture> { }
 
     public class SaldoContaCorreteHandlerFixture : IDisposable
     {
-        public SaldoContaCorreteHandler SaldoContaCorreteHandler;
+        public SaldoHandler SaldoContaCorreteHandler;
         public AutoMocker Mocker;
         private string _localizacao = "pt_BR";
 
@@ -25,28 +25,28 @@ namespace Questao5.Testes.Handlers
                 .RuleFor(x => x.Ativo, f => f.Random.Number(1, 2));
         }
 
-        public List<Movimentacao> GerarMovimentacoes() 
+        public List<Movimentacao> GerarMovimentacoes()
         {
             var movimentacao = new Faker<Movimentacao>(_localizacao)
                 .RuleFor(x => x.IdMovimento, f => f.Random.Number(1, 37).ToString())
                 .RuleFor(x => x.IdContaCorrente, f => f.Random.Number(1, 37).ToString())
-                .RuleFor(x => x.DataMovimento, f => f.Date.Past())
+                .RuleFor(x => x.DataMovimento, f => f.Date.Past().ToString())
                 .RuleFor(x => x.TipoMovimento, f => "C")
                 .RuleFor(x => x.Valor, f => f.Random.Number(1, 100));
 
             return movimentacao.Generate(3);
         }
 
-        public SaldoContaCorrenteRequestCommand GerarSaldoContaCorrenteRequestCommand() 
+        public SaldoContaCorrenteRequestCommand GerarSaldoContaCorrenteRequestCommand()
         {
             return new Faker<SaldoContaCorrenteRequestCommand>(_localizacao)
                 .RuleFor(x => x.NumeroContaCorrete, f => f.Random.Number(1, 10));
         }
 
-        public SaldoContaCorreteHandler ObterSaldoContaCorreteHandler()
+        public SaldoHandler ObterSaldoContaCorreteHandler()
         {
             Mocker = new AutoMocker();
-            SaldoContaCorreteHandler = Mocker.CreateInstance<SaldoContaCorreteHandler>();
+            SaldoContaCorreteHandler = Mocker.CreateInstance<SaldoHandler>();
 
             return SaldoContaCorreteHandler;
         }

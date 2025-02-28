@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3KKDoW3sZyI=",
+  "dgSpecHash": "I8VkgOTMrZc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\Teste\\OneDrive_1_04-02-2025\\Questao1\\Questao1.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Premiersoft\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\Premiersoft\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\Premiersoft\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\Premiersoft\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Premiersoft\\Documents\\ARQ\\Alberto\\TesteAlberto\\Questao1\\Questao1.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
